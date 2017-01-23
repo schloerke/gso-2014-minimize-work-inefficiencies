@@ -1,0 +1,19 @@
+\documentclass{article}
+
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+
+This is Sweave output
+
+<<>>=
+fib <- function(x) {
+  if (x < 2) return(1)
+  fib(x - 1) + fib(x - 2)
+}
+result <- fib(10)
+result
+@
+
+
+
+\end{document}

@@ -1,0 +1,25 @@
+\documentclass{article}
+
+\usepackage{Sweave}
+\begin{document}
+\input{fib-sweave-concordance}
+
+This is Sweave output
+
+\begin{Schunk}
+\begin{Sinput}
+> fib <- function(x) {
++   if (x < 2) return(1)
++   fib(x - 1) + fib(x - 2)
++ }
+> result <- fib(10)
+> result
+\end{Sinput}
+\begin{Soutput}
+[1] 89
+\end{Soutput}
+\end{Schunk}
+
+
+
+\end{document}

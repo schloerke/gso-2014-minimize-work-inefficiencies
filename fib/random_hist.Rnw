@@ -1,0 +1,15 @@
+% !Rnw weave=knitr
+
+\documentclass{article}
+
+\begin{document}
+
+This is knitr output of a random histogram
+
+<<>>=
+hist(runif(100))
+@
+
+
+
+\end{document}
